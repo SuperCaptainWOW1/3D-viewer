@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  background-color: #181818;
+  color: #fff;
+}
+
+canvas {
+  border: 10px red;
+  border-radius: 15px;
+}
+
+.app {
+  padding: 0 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2.5rem 0;
+}
+
+.app__objects-container {
+  background-color: #212121;
+  padding: 1.5rem;
+  margin-left: 100px;
+  width: 400px;
+  border-radius: 15px;
+}
+
+.app__objects-container h2 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.app__objects-container h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.color-configurator {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.color-configurator input {
+  font-size: 1.2rem;
+  background-color: #505050;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: .2rem;
+}
+
+.color-configurator__color-viewer {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.app__objects-container__list {
+  height: 382px;
+  overflow-y: auto;
+}
+
+.app__objects-container__list p {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.remove-mesh-button {
+  cursor: pointer;
+}
+
+.app__objects-container__create-buttons {
+  border: 2px solid #111;
+  background-color: #323232;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: .5rem 0 1rem 0;
+}
+
+.app__objects-container__create-buttons span {
+  border-right: 2px solid #111;
+  padding: .2rem 1.35rem;
+  cursor: pointer;
+}
+
+.app__objects-container__create-buttons span:last-child {
+  border-right: none;
+}
+
+.app__objects-container__create-buttons span:hover {
+  background-color: #454545;
+}
+
+.app__objects-container__create-buttons span:first-child:hover {
+  border-radius: 7px 0 0 7px;
+}
+
+.app__objects-container__create-buttons span:last-child:hover {
+  border-radius: 0 7px 7px 0;
+}
+
+/* Scrollbar customization */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #404040;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #808080;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #656565;
+}
